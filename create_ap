@@ -1657,8 +1657,9 @@ if [[ -n "$PASSPHRASE" ]]; then
 wpa=${WPA_VERSION}
 wpa_${WPA_KEY_TYPE}=${PASSPHRASE}
 wpa_key_mgmt=WPA-PSK
-wpa_pairwise=TKIP CCMP
+wpa_pairwise=CCMP
 rsn_pairwise=CCMP
+max_num_sta=8
 EOF
 fi
 

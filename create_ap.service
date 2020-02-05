@@ -1,6 +1,6 @@
 [Unit]
 Description=Create AP Service
-After=network.target
+After=wpa_supplicant-nl80211@wlan0.service
 
 [Service]
 Type=simple
